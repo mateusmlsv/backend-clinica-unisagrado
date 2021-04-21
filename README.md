@@ -4,8 +4,8 @@
 ## Passo a passo para executar os containers do docker
 > Execute os seguintes comando no seu terminal
 ```json
-# git clone
-# cd prova_lp3
+# git clone https://github.com/mateusmlsv/backend-clinica-unisagrado.git
+# cd backend-clinica-unisagrado
 # docker-compose -f docker-compose.yml up --build -d
 ```
 
