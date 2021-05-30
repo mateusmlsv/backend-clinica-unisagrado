@@ -1,4 +1,4 @@
-# Backend da aplicação `Clinica Unisagrado`
+# Aplicação `Clinica Unisagrado`
 ### API para lidar com as requisições ao banco de dados
 
 ## Passo a passo para executar os containers do docker
