@@ -91,4 +91,6 @@ CREATE TABLE clinica_unisagrado.ficha_avaliacao (
     patient_id int NOT NULL,
     CONSTRAINT FK_PatientFichaAvalicao FOREIGN KEY (patient_id)
     REFERENCES patients(id)
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

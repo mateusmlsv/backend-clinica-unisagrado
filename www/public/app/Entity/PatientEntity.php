@@ -6,16 +6,13 @@ use App\Db\Database;
 use Exception;
 use \PDO;
 
-class MedicalrecortEntity {
-    private $table = 'ficha_avaliacao';
+class PatientEntity {
+    private $table = 'patients';
 
-    public function list($id)
+    public function list($id = null)
     {
         $where = $id ? "id = $id" : null;
-        if (empty($patients = (new Database($this->table))->select($where)->fetchAll(PDO::FETCH_ASSOC))) {
-            throw new Exception('Nenhum registro encontrado', 400);
-        }
-        return $patients;
+        return (new Database($this->table))->select($where)->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function register($data)
